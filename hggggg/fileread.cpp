@@ -6,9 +6,9 @@
 #define kCircleArraySize 6
 #define kTriangleArraySize 6
 
-JJJJstruct FileRead(FILE* input_file)
+JJJJStruct* FileRead(FILE* input_file)
 {
-	JJJJstruct input_struct;
+	JJJJStruct input_struct;
 	int o = 0;
 	float input_poz_circle[kCircleArraySize] = { 0 };
 	float input_poz_triangle[kTriangleArraySize] = { 0 };
@@ -79,7 +79,7 @@ JJJJstruct FileRead(FILE* input_file)
 		input_poz_triangle[k] = 0;
 	}
 	o = 0;
-	return input_struct;
+	return &input_struct;
 }
 
 int StrNumber(char input_symbol)
