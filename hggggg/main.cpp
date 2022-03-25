@@ -3,15 +3,7 @@
 
 int main()
 {
-	FILE* input_file;
-	input_file = fopen("input.txt", "r");
-	if (!input_file) {
-		return;
-	}
-	while (!feof(input_file)) {
-		JJJJStruct kekis = *FileRead(input_file);
-		printf("%d\n", kekis.choose_function);
-	}
-	fclose(input_file);
+    int result = FileRead();
+    printf("result = %d", result);
     return 0;
 }
