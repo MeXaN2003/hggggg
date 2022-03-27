@@ -1,4 +1,6 @@
 #pragma once
 
-void Circle(float*);
-void Triangle(float*);
+double CircleArea(double*);
+double CirclePerimeter(double*);
+double TriangleArea(double*);
+double TrianglePerimeter(double*);
